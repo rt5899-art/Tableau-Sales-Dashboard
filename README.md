@@ -1,11 +1,11 @@
-Project README: Sales Performance Dashboard
-Project Overview
+# Project README: Sales Performance Dashboard
+## Project Overview
 This project involves the development of an interactive Sales Performance Dashboard utilizing a Tableau packaged workbook format (.twbx). The dashboard provides data-driven visual tracking of corporate sales performance, profitability trends, regional distributions, and customer-level purchasing patterns. It serves as a centralized operational and strategic reporting tool designed to enable leadership to make informed planning, inventory, and revenue optimizations.
 
-Requirements
+# Requirements
 Operating System: Windows 10/11 or macOS Mojave (or newer).
 
-Software: Tableau Desktop (Professional or Personal Edition) versions compatible with the workbook layout, or Tableau Reader for viewing-only access.
+# Software: Tableau Desktop (Professional or Personal Edition) versions compatible with the workbook layout, or Tableau Reader for viewing-only access.
 
 Data Connectivity: An embedded high-performance Hyper extract dataset (.hyper) representing comprehensive sales tracking metrics (including transaction dates, geography, category, and profitability segments).
 
