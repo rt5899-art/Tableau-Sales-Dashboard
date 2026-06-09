@@ -1,49 +1,57 @@
-# Project README: Sales Performance Dashboard
-## Project Overview
-This project involves the development of an interactive Sales Performance Dashboard utilizing a Tableau packaged workbook format (.twbx). The dashboard provides data-driven visual tracking of corporate sales performance, profitability trends, regional distributions, and customer-level purchasing patterns. It serves as a centralized operational and strategic reporting tool designed to enable leadership to make informed planning, inventory, and revenue optimizations.
+# Project Overview
 
-### Requirements
-Operating System: Windows 10/11 or macOS Mojave (or newer).
+The Tableau Sales Dashboard is an interactive business intelligence solution designed to analyze sales performance, profitability trends, and customer behavior over multiple fiscal years. Organizations often struggle to identify the exact drivers of profit and loss due to isolated, fragmented raw transaction logs. This project solves that problem by transforming granular sales and customer metrics into unified, actionable visualizations. It enables executives, sales managers, and marketing teams to evaluate key performance indicators (KPIs), detect seasonal anomalies, and perform deep-dive subcategory analyses to drive data-backed strategic decisions.
+### LINK : https://public.tableau.com/views/Dashbaord-Sales_17809534096610/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link
+## Requirements 
 
-### Software: 
-Tableau Desktop (Professional or Personal Edition) versions compatible with the workbook layout, or Tableau Reader for viewing-only access.
+#### System Dependencies
 
-### Data Connectivity: 
-An embedded high-performance Hyper extract dataset (.hyper) representing comprehensive sales tracking metrics (including transaction dates, geography, category, and profitability segments).
+Tableau Desktop Professional Edition or Tableau Public Desktop (Version 2023.1 or higher recommended)
 
-### Memory and Processing: 
-Minimum 4GB RAM (8GB recommended) to ensure fluid rendering of parameter actions and dynamic filtering configurations.
+Operating System: Microsoft Windows 10 or later, or macOS 10.15 or later
 
-### Tools and Technologies
-Business Intelligence Platform: Tableau Desktop for visualization engineering and interactive interface authoring.
+## Software Versions and Prerequisites 
 
-Data Storage and Engine: Tableau Hyper technology for fast analytical query execution on complex underlying tabular datasets.
+Data Source Compatibility: Structured relational data files (e.g., Microsoft Excel .xlsx, .csv formats, or extracts connecting to Sample - Superstore data models)
 
-Formatting and Document Standards: Markdown syntax utilized exclusively to structure data-driven project documentation without external graphical dependencies or icon sets.
+Active internet connection if publishing to or sync-testing with Tableau Public / Tableau Cloud
 
-### Challenges Faced
-Hyper Extract Integration: Resolving performance lags associated with rendering multiple complex viz sheets on a single dashboard container was a baseline hurdle. Optimizing the underlying hyper table structure during formatting phases required minimizing non-essential field queries.
+## Hardware and Software Limits
 
-### Layout and Container Alignment: 
-Achieving precise design uniformity across custom dashboard containers without causing unintended layout shifts when toggling across viewing resolutions.
+Minimum 4 GB RAM (8 GB or higher recommended for smooth rendering of complex Level of Detail expressions)
 
-### Aggregated Calculation Complexities: 
-Formulating accurate multi-level calculated dimensions across geographic hierarchies, specifically ensuring that profit margin calculations properly weighted high-volume, low-margin transactions against low-volume, high-margin transactions.
+Dashboard layout configured with fixed dimensions to guarantee alignment and visual structure across standard desktop resolutions
 
-### Insights Discovered
-Regional Disparities: Marked variations exist between high-performing regional sectors and low-margin clusters, showing that aggregate gross sales figures frequently mask local unprofitability.
+## Tools and Technologies
 
-### Product Line Interdependencies: 
-Certain peripheral categories act as loss leaders, generating low standalone profit but anchoring high-frequency sales volume for complementary high-margin items.
+Business Intelligence & Visualization: Tableau Desktop / Tableau Public
 
-### Transactional Volatility: 
-Visual historical indexing exposed critical seasonal revenue spikes, allowing operations to map predictable trends against recurring customer purchasing cycles.
+Data Organization: Relationships and logical layer configuration for multi-table linking
 
-### Recommendations for Improvements
-Automated Data Pipelines: Transition the static packaged Hyper extract structure into an active server-published live or scheduled extract connection via Tableau Server or Cloud to allow real-time operational utility.
+Analytical Expressions: Level of Detail (LOD) Expressions, custom calculated fields, and conditional parameters
 
-### Device-Specific Dashboard Layouts: 
-Introduce targeted dashboard visibility configurations for mobile and tablet resolutions to sustain readable layouts outside standard desktop viewports.
+Design & Layout Production: Presentation software (for customized dashboard backgrounds) and coordinate-based floating/tiled layout structures
 
-### Advanced Predictive Metrics: 
-Embed statistical forecasting elements, such as Tableau’s built-in exponential smoothing models, directly onto historical line charts to offer predictive future quarterly sales run rates.
+## Challenges Faced
+
+Date Equalization for Year-over-Year (YoY) Comparisons: Raw date values across separate historical years made it difficult to map matching seasonal weeks accurately. This was overcome by building robust logical calculations that normalized date fields to a standardized relative timeframe, allowing a perfectly aligned chronological comparison between the current year and the previous year.
+
+Complex Multi-Metric Layout Density: Fitting comprehensive product performance, sales metrics, weekly trend indicators, and profitability calculations into a single workspace threatened to clutter the user interface. This challenge was resolved by separating the analysis into dedicated Sales and Customer dashboards, leveraging interactive parameter-based navigation actions so users could cleanly toggle between distinct focal points.
+
+Automating Dynamic Threshold Highlights: Designing an automated way to highlight weeks that fell below or above organizational benchmarks without hardcoding static numbers was highly difficult. This was overcome by writing dynamic calculations to isolate individual data points and applying discrete color encoding rules to instantaneously flag profit and loss variances.
+
+## Key Insights
+
+Pronounced Q4 Seasonal Demand Acceleration: November and December consistently achieve the highest sales volumes across the multi-year cycle. This surge reflects highly concentrated holiday demand, contrasting starkly with January and February, which exhibit a post-holiday sales contraction.
+
+Distinct Outliers in Subcategory Profit Margins: High-volume sales do not inherently guarantee healthy profit margins. Specific product segments like Phones, Chairs, and Copiers maintain strong profitability markers, whereas other segments such as Tables, Bookcases, and Supplies frequently incur losses despite generating significant baseline revenue.
+
+Shifting Purchase Frequency and Engagement: Historical transaction patterns from 2020 to 2021 showed that the majority of individual customers placed only a single order per fiscal year. In contrast, analytics from 2022 to 2023 demonstrate an increase in engagement, with most active customers averaging two or more orders per year. This structural change points to rising customer loyalty and improved retention rates.
+
+## Recommendations for Improvements
+
+Implement Live Advanced Forecasting Models: Integrate exponential smoothing or ARIMA forecasting algorithms directly into the time-series views to generate real-time predictive sales corridors for future quarters based on historical variance.
+
+Incorporate Row-Level Security and Regional Filters: Implement dynamic user-attribute parameters so that regional sales directors automatically filter dashboards down to their specific operational territories upon logging in.
+
+Database Query Performance Tuning: Materialize data extracts instead of relying on live flat files to speed up the execution of nested Level of Detail (LOD) expressions, reducing dashboard loading lag when working with larger datasets.
