@@ -47,4 +47,4 @@ Insight: Canada contributes only 7.25% to overall profit, drastically trailing t
 
 Insight: A stable moving average line reveals minor short-term profit volatility despite rising overall revenue.
 
-Action: Introduce dynamic inventory controls and optimized logistics scheduling to stabilize operational costs during sudden, high-volume order spikes.
+* Action: Introduce dynamic inventory controls and optimized logistics scheduling to stabilize operational costs during sudden, high-volume order spikes.
