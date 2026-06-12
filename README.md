@@ -4,7 +4,7 @@
 
 This project features an interactive Tableau Sales Dashboard designed to track, analyze, and optimize global sales performance. By consolidating key financial and operational metrics, the dashboard provides stakeholders with deep visibility into revenue trends, profitability drivers, order volumes, and regional performance across a multi-year timeline (2015–2017).
 
-### LINK : https://public.tableau.com/views/Dashbaord-Sales_17809534096610/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link
+###### LINK : https://public.tableau.com/views/Dashbaord-Sales_17809534096610/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link
 
 ### Tools & Technologies
 
